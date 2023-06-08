@@ -17,11 +17,3 @@ LINE_COLOUR = (23,145,135)
 CIRCLE_COLOUR = ( 239, 231, 200)
 CROSS_COLOUR = ( 66, 66, 66)
 
-
-#for avoidning an error : UnboundLocalError: cannot access local variable
-# 'clicked_row' where it is not associated with a value
-#clicked_row = None
-#clicked_col = None
-#(130,163,255)
-    #(105,60,94)
-    #(28,170,156)
