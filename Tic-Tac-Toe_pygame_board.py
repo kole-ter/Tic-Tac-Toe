@@ -31,7 +31,7 @@ game_over = False
 #SCREEN
 pygame.init()
 screen = pygame.display.set_mode( (WIDTH, HEIGHT ))
-pygame.display.set_caption('TIC TAC TOE AI')
+pygame.display.set_caption('TIC TAC TOE')
 screen.fill(BG_COLOUR)
 
 #BOARD
