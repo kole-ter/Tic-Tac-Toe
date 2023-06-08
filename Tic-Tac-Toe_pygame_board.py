@@ -11,8 +11,7 @@ pygame.display.set_caption('TIC TAC TOE AI')
 screen.fill(BG_COLOUR)
 
 player = 1
-#for avoidning an error : UnboundLocalError: cannot access local variable
-# 'clicked_row' where it is not associated with a value
+
 clicked_row = None
 clicked_col = None
 
@@ -43,26 +42,7 @@ def mark_square(row, col, player):
     board[row][col] = player
 
 def available_square(row, col):
-
-    #if row is not None and col is not None:
-        # If row and col have valid values, check if the corresponding square on the board is 0
-        #return board[row][col] == 0
-    # If row or col is None, it means the square is not valid or hasn't been clicked yet
-    #return False
-    ##these doesnt work
     return  board[row][col] == 0
-    #same thing:
-    #if board[row][col] == 0:
-       # return True
-    #else:
-        #return False
-    #The error occurred in your previous implementation because you were trying to access board[row][col]
-    # when row and col were None, which led to a "ValueError: can only convert an array of size 1
-    # to a Python scalar." This error happens because None is not a valid index for accessing elements
-    # in the board array.
-    #By adding the check if row is not None and col is not None, we ensure that the code inside the if block
-    # is executed only when row and col have valid values (i.e., they are not None).
-    # This avoids accessing the board array with invalid indices and resolves the error.
 
 def is_board_full():
     return 0 not in board
@@ -135,8 +115,7 @@ draw_lines()
 game_over = False
 
 def main():
-    #global clicked_row
-    #global clicked_col
+    
     global game_over
     global player
     while True:
